@@ -1,22 +1,44 @@
-.kep1 {
-    width: 250px;
-    border-radius: 25px;
-}
-
 .container {
     width: 900px;
 }
 
-#kep2,
-#kep3 {
-    width: 200px;
+p {
+    font-family: 'Muli', Helvetica, Arial, sans-serif;
+    font-size: 1em;
 }
+
+h1 {
+    font-family: 'Catamaran', Helvetica, Arial, sans-serif;
+    font-size: 3.3em;
+}
+
+button.btn.btn-default:hover {
+    animation-name: button;
+    animation-duration: 2s;
+    background-color: #ffc94b;
+}
+
+@keyframes button {
+    from {
+        background-color: transparent;
+    }
+    to {
+        background-color: #ffc94b;
+    }
+}
+
+/*---- NAV AND TOP ------------------*/
 
 section.top {
     /*background-image: url("/img/bg-pattern.png");*/
     background: url("/img/bg-pattern.png"), linear-gradient(to right, #ff0066 0%, #9900cc 100%);
     position: relative;
-    padding: 60px 0 50px 0;
+    padding: 130px 0 130px 0;
+}
+
+.kep1 {
+    width: 250px;
+    border-radius: 25px;
 }
 
 .navbar-default {
@@ -56,16 +78,48 @@ section.top {
     color: #ffc94b;
 }
 
+div.col-xs-8 {
+    padding: 20px 60px;
+    color: white;
+}
+
+button.btn.btn-default {
+    background-color: transparent;
+    color: white;
+    border-radius: 30px;
+    padding: 12px 40px;
+    font-size: 0.7em;
+}
+
+/*---- YELLOW SECTION  ------------------*/
+
 section.yell {
     background-color: #ffc94b;
     position: relative;
     padding: 50px 0 50px 0;
 }
 
+#kep2,
+#kep3 {
+    width: 200px;
+}
+
+/*---- WHITE SECTION ------------------*/
+
 section.white {
     position: relative;
     padding: 50px 0 50px 0;
 }
+
+.features {
+    padding: 20px;
+}
+
+.features>h6 {
+    font-size: 5em;
+}
+
+/*---- PHOTO SECTION ------------------*/
 
 section.photo {
     background: url("/img/bg-cta.jpg") no-repeat;
@@ -73,6 +127,8 @@ section.photo {
     position: relative;
     padding: 200px 0 200px 0;
 }
+
+/*---- FOOTER ------------------*/
 
 footer {
     background-color: black;
@@ -86,22 +142,4 @@ a#modalPrivacy:hover,
 a#modalTerms:hover,
 a#modalFAQ:hover {
     color: #fdcc52;
-}
-
-p {
-    font-family: 'Muli', Helvetica, Arial, sans-serif;
-    font-size: 1em;
-}
-
-h1 {
-    font-family: 'Catamaran', Helvetica, Arial, sans-serif;
-    font-size: 3.3em;
-}
-
-.features {
-    padding: 20px;
-}
-
-.features>h6 {
-    font-size: 5em;
 }
