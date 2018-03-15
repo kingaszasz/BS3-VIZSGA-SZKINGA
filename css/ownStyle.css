@@ -12,6 +12,15 @@ h1 {
     font-size: 3.3em;
 }
 
+button.btn.btn-default {
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    border-radius: 30px;
+    padding: 12px 40px;
+    font-size: 0.7em;
+}
+
 button.btn.btn-default:hover {
     animation-name: button;
     animation-duration: 2s;
@@ -83,20 +92,12 @@ div.col-xs-8 {
     color: white;
 }
 
-button.btn.btn-default {
-    background-color: transparent;
-    color: white;
-    border-radius: 30px;
-    padding: 12px 40px;
-    font-size: 0.7em;
-}
-
 /*---- YELLOW SECTION  ------------------*/
 
 section.yell {
     background-color: #ffc94b;
     position: relative;
-    padding: 50px 0 50px 0;
+    padding: 130px 0 130px 0;
 }
 
 #kep2,
