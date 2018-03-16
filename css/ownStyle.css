@@ -1,7 +1,3 @@
-.container {
-    width: 900px;
-}
-
 p {
     font-family: 'Muli', Helvetica, Arial, sans-serif;
     font-size: 1em;
@@ -9,7 +5,14 @@ p {
 
 h1 {
     font-family: 'Catamaran', Helvetica, Arial, sans-serif;
-    font-size: 3.3em;
+    font-size: 2.3em;
+    padding: 30px;
+}
+
+@media (min-width: 992px) {
+    h1 {
+        font-size: 3.3em;
+    }
 }
 
 button.btn.btn-default {
@@ -17,22 +20,25 @@ button.btn.btn-default {
     border-color: white;
     color: white;
     border-radius: 30px;
-    padding: 12px 40px;
-    font-size: 0.7em;
+    padding: 15px 50px;
+    font-size: 0.8em;
 }
 
 button.btn.btn-default:hover {
     animation-name: button;
     animation-duration: 2s;
     background-color: #ffc94b;
+    border-color: #ffc94b;
 }
 
 @keyframes button {
     from {
         background-color: transparent;
+        border-color: white;
     }
     to {
         background-color: #ffc94b;
+        border-color: #ffc94b;
     }
 }
 
@@ -43,11 +49,21 @@ section.top {
     background: url("/img/bg-pattern.png"), linear-gradient(to right, #ff0066 0%, #9900cc 100%);
     position: relative;
     padding: 130px 0 130px 0;
+    color: white;
 }
 
 .kep1 {
     width: 250px;
     border-radius: 25px;
+    margin: 50px 0 0 0;
+}
+
+@media (min-width: 992px) {
+    .kep1 {
+        width: 250px;
+        border-radius: 25px;
+        margin: auto;
+    }
 }
 
 .navbar-default {
@@ -55,17 +71,18 @@ section.top {
     border-color: transparent;
 }
 
-.navbar-default .my-nav-left>li>a,
-.navbar-default .my-nav-left>li>a.whith-white {
+.navbar-default .navbar-brand,
+li a.whith-white.navbar-brand {
     text-decoration: none;
     color: #ffc94b;
+    font-size: 0.9em;
 }
 
-.navbar-default .my-nav-left>li>a:hover {
+li a.navbar-brand:hover {
     color: white;
 }
 
-.navbar-default .my-nav-left>li>a.whith-white:hover {
+li a.whith-white.navbar-brand:hover {
     color: darkgray;
 }
 
@@ -103,10 +120,24 @@ section.yell {
 #kep2,
 #kep3 {
     width: 180px;
+    margin: 5px;
 }
 
+@media (min-width: 992px) {}
+
 div.col-xs-12 h1.bigger {
-    font-size: 4.5em;
+    font-size: 3.5em;
+    padding: 0 30px;
+}
+
+div.col-xs-12 p {
+    padding: 0 30px;
+}
+
+@media (min-width: 992px) {
+    div.col-xs-12 h1.bigger {
+        font-size: 4.5em;
+    }
 }
 
 /*---- WHITE SECTION ------------------*/
@@ -186,8 +217,9 @@ section.photo {
     background: url("/img/bg-cta.jpg") no-repeat center center;
     background-size: cover;
     position: relative;
-    padding: 200px 0 200px 0;
+    padding: 200px 0;
     color: white;
+    overflow: hidden;
 }
 
 section.photo::after {
@@ -196,7 +228,7 @@ section.photo::after {
     clear: both;
     background: rgba(0, 0, 0, 0.6);
     width: 100%;
-    height: 100vh;
+    height: 180vh;
     position: absolute;
     top: 0;
     left: 0;

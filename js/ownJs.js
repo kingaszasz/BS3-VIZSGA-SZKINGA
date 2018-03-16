@@ -8,4 +8,6 @@ $(document).ready(function () {
             $(".navbar-default li>a").removeClass('whith-white');
         }
     });
+
+
 });
