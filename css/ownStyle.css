@@ -95,6 +95,10 @@ li a.whith-white.navbar-brand:hover {
     color: darkgray;
 }
 
+div#myNav {
+    margin-top: 15px;
+}
+
 .navbar-default .my-nav>li>a {
     color: white;
     text-decoration: none;
