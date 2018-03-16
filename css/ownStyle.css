@@ -1,3 +1,7 @@
+.container {
+    padding: 0 50px;
+}
+
 p {
     font-family: 'Muli', Helvetica, Arial, sans-serif;
     font-size: 1em;
@@ -5,17 +9,14 @@ p {
 
 h1 {
     font-family: 'Catamaran', Helvetica, Arial, sans-serif;
-    font-size: 2.3em;
-    padding: 30px;
+    font-size: 3.5em;
 }
 
-@media (min-width: 992px) {
-    h1 {
-        font-size: 3.3em;
-    }
+h2 {
+    font-family: 'Catamaran', Helvetica, Arial, sans-serif;
 }
 
-button.btn.btn-default {
+button.btn.btn-default.mybtn {
     background-color: transparent;
     border-color: white;
     color: white;
@@ -24,7 +25,7 @@ button.btn.btn-default {
     font-size: 0.8em;
 }
 
-button.btn.btn-default:hover {
+button.btn.btn-default.mybtn:hover {
     animation-name: button;
     animation-duration: 2s;
     background-color: #ffc94b;
@@ -58,11 +59,22 @@ section.top {
     margin: 50px 0 0 0;
 }
 
+section.top h2 {
+    font-size: 2.3em;
+}
+
 @media (min-width: 992px) {
     .kep1 {
         width: 250px;
         border-radius: 25px;
         margin: auto;
+    }
+    section.top h2 {
+        font-size: 3.3em;
+        text-align: left;
+    }
+    section.top p {
+        text-align: left;
     }
 }
 
@@ -123,19 +135,12 @@ section.yell {
     margin: 5px;
 }
 
-@media (min-width: 992px) {}
-
-div.col-xs-12 h1.bigger {
+div.col-lg-12 h1.bigger {
     font-size: 3.5em;
-    padding: 0 30px;
-}
-
-div.col-xs-12 p {
-    padding: 0 30px;
 }
 
 @media (min-width: 992px) {
-    div.col-xs-12 h1.bigger {
+    div.col-lg-12 h1.bigger {
         font-size: 4.5em;
     }
 }
@@ -156,9 +161,13 @@ section.white {
     color: rgb(150, 1, 83);
 }
 
-div.col-xs-12 p,
+div.col-lg-12 p,
 .features p {
     color: gray;
+}
+
+#features .col-lg-12 h1 {
+    font-size: 3.5em;
 }
 
 section.white div.col-xs-12 {
@@ -228,7 +237,7 @@ section.photo::after {
     clear: both;
     background: rgba(0, 0, 0, 0.6);
     width: 100%;
-    height: 180vh;
+    height: 200vh;
     position: absolute;
     top: 0;
     left: 0;
@@ -243,9 +252,15 @@ section.photo * {
 footer {
     background-color: black;
     padding: 50px 0 50px 0;
-    color: white;
+    color: lightgray;
     font-size: 0.7em;
     text-decoration: none;
+}
+
+a#modalPrivacy,
+a#modalTerms,
+a#modalFAQ {
+    color: lightgray;
 }
 
 a#modalPrivacy:hover,
