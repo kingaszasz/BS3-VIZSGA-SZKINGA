@@ -9,5 +9,26 @@ $(document).ready(function () {
         }
     });
 
+    $('#downloadMenu').click(function () {
+
+        $('html').animate({
+            scrollTop: $('#download').offset().top
+        }, 400);
+    });
+
+    $('#featuresMenu').click(function () {
+
+        $('html').animate({
+            scrollTop: $('#features').offset().top
+        }, 400);
+    });
+
+    $('#contactMenu').click(function () {
+
+        $('html').animate({
+            scrollTop: $('#contact').offset().top
+        }, 400);
+    });
+
 
 });
